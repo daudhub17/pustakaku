@@ -76,9 +76,22 @@ ul{
     padding: 0;
 }
 
-li{
+
+li a {
+    text-decoration: none;
+    color: inherit;
+}
+li {
     background: #fff;
     margin: 10px 0;
     padding: 10px;
     border: 1px solid #ddd;
+    /* Tambahkan transisi agar halus */
+    transition: all 0.3s ease;
+}
+
+li:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transform: scale(1.02); /* Sedikit membesar */
 }
